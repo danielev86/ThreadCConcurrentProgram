@@ -1,0 +1,48 @@
+#ifndef TESTBUFFER_H_
+#define TESTBUFFER_H_
+
+
+
+
+int buffer_unitario_vuoto_before();
+int buffer_unitario_vuoto_after();
+int buffer_unitario_pieno_before();
+int buffer_unitario_pieno_after();
+int buffer_generico_vuoto_before();
+int buffer_generico_vuoto_after();
+int buffer_generico_pieno_before();
+int buffer_generico_pieno_after();
+
+void test_put_bloccante_buffer_unitario_vuoto();
+void test_put_non_bloccante_buffer_unitario_vuoto();
+void test_get_bloccante_buffer_unitario_vuoto();
+void test_get_non_bloccante_buffer_unitario_vuoto();
+void test_putAndGet_bloccante_concorrente_1Produttore1Consumatore_buffer_unitario_vuoto();
+void test_putAndGet_non_bloccante_concorrente_1Produttore1Consumatore_buffer_unitario_vuoto();
+void test_getAndPut_bloccante_concorrente_1Consumatore1Produttore_buffer_unitario_vuoto();
+void test_getAndPut_non_bloccante_concorrente_1Consumatore1Produttore_buffer_unitario_vuoto();
+void test_putAndGet_bloccante_concorrente_10Produttori10Consumatori_buffer_unitario_vuoto();
+void test_putAndGet_non_bloccante_concorrente_10Produttori10Consumatori_buffer_unitario_vuoto();
+void test_put_bloccante_concorrente_10Produttori_buffer_unitario_vuoto();
+void test_put_non_bloccante_concorrente_10Produttori_buffer_unitario_vuoto();
+
+void test_get_bloccante_buffer_unitario_pieno();
+void test_get_non_bloccante_buffer_unitario_pieno();
+void test_put_bloccante_buffer_unitario_pieno();
+void test_put_non_bloccante_buffer_unitario_pieno();
+void test_get_bloccante_concorrente_10Consumatori_buffer_unitario_pieno();
+void test_get_non_bloccante_concorrente_10Consumatori_buffer_unitario_pieno();
+
+void test_put_bloccante_concorrente_10Produttori_buffer_generico_vuoto();
+void test_put_non_bloccante_concorrente_10Produttori_buffer_generico_vuoto();
+void test_put_bloccante_concorrente_5ProduttoriDoppioMessaggio_buffer_generico_vuoto();
+void test_put_non_bloccante_concorrente_5ProduttoriDoppioMessaggio_buffer_generico_vuoto();
+void test_putAndGet_bloccante_concorrente_10Produttori10Consumatori_buffer_generico_vuoto();
+void test_putAndGet_non_bloccante_concorrente_10Produttori10Consumatori_buffer_generico_vuoto();
+
+void test_get_bloccante_concorrente_10Consumatori_buffer_generico_pieno();
+void test_get_non_bloccante_concorrente_10Consumatori_buffer_generico_pieno();
+void test_put_bloccante_concorrente_10Produttori_buffer_generico_pieno();
+void test_put_non_bloccante_concorrente_10Produttori_buffer_generico_pieno();
+
+#endif
